@@ -1,0 +1,11 @@
+# Ignore secret env file
+.env
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+
