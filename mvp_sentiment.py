@@ -19,9 +19,9 @@ MODEL = "gpt-3.5-turbo"
 
 client = OpenAI(api_key=API_KEY)
 
-INPUT_FILE = "sample.json"
-OUTPUT_JSON = "sample_with_sentiment.json"
-OUTPUT_CSV = "sample_with_sentiment.csv"
+INPUT_FILE = "GM_jfk_plaza_reviews.json"
+OUTPUT_JSON = "GM_jfk_plaza_reviews_with_sentiment.json"
+OUTPUT_CSV = "GM_jfk_plaza_reviews_with_sentiment.csv"
 
 # helper to call gpt and classify for one snippet
 def classify_sentiment(text: str) -> str:
