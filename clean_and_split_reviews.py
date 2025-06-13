@@ -34,8 +34,9 @@ print(f"during count: {len(during)}")
 print(f"post count: {len(post)}")
 
 # save everything to separate files
-pre.to_json("pre.json", orient="records", lines=True)
-during.to_json("during.json", orient="records", lines=True)
-post.to_json("post.json", orient="records", lines=True)
+pre.to_json("pre.json", orient="records", indent=2)
+during.to_json("during.json", orient="records", indent=2)
+post.to_json("post.json", orient="records", indent=2)
+
 
 print("✅ done! files saved: pre.json, during.json, post.json")
