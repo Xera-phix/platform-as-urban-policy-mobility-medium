@@ -1,34 +1,25 @@
-# GPT-Enabled Sentiment Analysis for Urban Policy Feedback
+# gpt-sentiment-mvp
 
-This project implements an end-to-end sentiment analysis pipeline using GPT-4 and open-source large language models (Mistral, LLaMA 3) to evaluate public feedback on urban policy changes. It was developed to assist the City of Philadelphia's Department of Urban Planning in interpreting public responses to the redesign of JFK Plaza (LOVE Park).
+a lightweight tool for analyzing public sentiment on urban design changes — built with gpt-4 and open-source llms (like mistral & llama 3). this project was made to help city planners understand how people really feel about places like jfk plaza (love park) in philadelphia.
 
-## 🧠 Key Features
+## what it does
 
-- **Multi-model sentiment classification:** Classifies feedback using GPT-4 and benchmarked open-source LLMs.
-- **Custom labeling schema:** Applies a task-specific sentiment rubric aligned with civic planning goals.
-- **Interactive visualization:** Generates temporal trends and statistical insights for public sentiment over time.
-- **Cost-aware evaluation:** Benchmarks inference cost, latency, and accuracy for each model.
-- **Lightweight pipeline:** Scripted for simple local or cloud deployment with minimal dependencies.
+- runs public feedback through gpt models to classify sentiment (positive, neutral, negative)
+- benchmarks cost, speed, and performance across models (open-source vs. api-based)
+- visualizes trends over time (bar charts, line graphs, boxplots, etc.)
+- saves city teams hours of manual reading & tagging
 
-## 📊 Example Use Case
+## why it matters
 
-Analyze public feedback from surveys, Twitter, or review platforms (e.g., Yelp) regarding:
-- Park redesign reception
-- Skateboarding policy controversies
-- New art installations (e.g., the Portal)
-- Civic engagement trends over time
+urban planning teams often collect tons of public input — but reading thousands of comments is slow, expensive, and subjective. this project automates that process while staying flexible enough to be reused on new datasets, different parks, and future civic projects.
 
-## 📁 Project Structure
+## how it works
 
 ```bash
 gpt-sentiment-mvp/
-├── data/
-│   ├── input.json             # Raw feedback data
-│   └── labels.json            # Ground truth for evaluation
-├── graphs/
-│   └── sentiment_trends.png   # Auto-generated visualizations
-├── src/
-│   ├── mvp_sentiment.py       # Main analysis pipeline
-│   ├── utils.py               # Preprocessing and helpers
-├── .env                       # Your OpenAI API key
-├── README.md                  # You're here
+├── data/              # your input files go here (json format)
+├── graphs/            # output graphs are saved here
+├── src/               # main script & helpers
+│   └── mvp_sentiment.py
+├── .env               # store your api key here
+├── README.md
