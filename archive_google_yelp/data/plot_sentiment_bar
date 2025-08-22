@@ -1,0 +1,54 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the sentiment analysis results from each period
+files = {
+    "Pre-Construction": "pre_output.json",
+    "During Construction": "during_output.json", 
+    "Post-Construction": "post_output.json"
+}
+
+# Count sentiment labels for each period
+summary_data = []
+
+for label, path in files.items():
+    df = pd.read_json(path)
+    counts = df["sentiment"].value_counts()
+    summary_data.append({
+        "Period": label,
+        "Positive": counts.get("positive", 0),
+        "Neutral": counts.get("neutral", 0),
+        "Negative": counts.get("negative", 0)
+    })
+
+# Convert to dataframe for plotting
+summary_df = pd.DataFrame(summary_data)
+
+# Create stacked bar chart showing sentiment distribution
+summary_df.set_index("Period")[["Positive", "Neutral", "Negative"]].plot(
+    kind="bar",
+    stacked=True,
+    color=["tab:green", "tab:gray", "tab:red"],
+    figsize=(10, 6)
+)
+
+# Customize plot appearance
+plt.title("Sentiment Distribution by Period (LOVE Park Google Reviews)")
+plt.ylabel("Number of Reviews")
+plt.xlabel("Reconstruction Period")
+plt.xticks(rotation=0)
+plt.legend(title="Sentiment")
+plt.tight_layout()
+plt.grid(axis="y", linestyle="--", alpha=0.5)
+
+# Add explanatory caption
+caption = (
+    "Data source: Google Maps reviews for LOVE Park (JFK Plaza), labeled using GPT-3.5.\n"
+    "Sentiment is based on review text only. Reviews without text were excluded.\n"
+    "Periods reflect pre-, during-, and post-reconstruction phases (2016–2018)."
+)
+
+plt.figtext(0.5, -0.08, caption, wrap=True, horizontalalignment='center', fontsize=9)
+
+# Display the plot
+plt.show()

@@ -1,0 +1,54 @@
+user_id,name,rating,text,resp,gmap_id,datetime,date,timestamp,year,num_pics,text_length,text_processed,sentiment,google_maps_star_rating
+101282096135078312623,Miroslav Cajic,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1558530639.063,18038.0,09:10:39,2019,0.0,,,,5
+110703091049462032641,chris stewart,3,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1576601715.652,18247.0,11:55:15,2019,2.0,,,,3
+114319346264935655626,Veronique Murphy,3,Don't like the new construction. Not enough green space. Looking forward to seeing the fountain once it's up and running. Maybe I will like it better then.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1524576366.161,17645.0,09:26:06,2018,0.0,155.0,Don't like the new construction. Not enough green space. Looking forward to seeing the fountain once it's up and running. Maybe I will like it better then.,negative,3
+101751769020216908114,Margaret Hickey,5,"Pretty, not much of a park tho","{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1589378985.703,18395.0,10:09:45,2020,0.0,30.0,"Pretty, not much of a park tho",neutral,5
+115253111098762880098,Jeff Chipman,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1548513954.013,17922.0,09:45:54,2019,0.0,,,,5
+101145874230822799473,Jason W,3,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1513048270.824,17512.0,22:11:10,2017,0.0,,,,3
+107800195138289460225,Zko90,4,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1457842711.611,16873.0,23:18:31,2016,0.0,,,,4
+113572402416647077146,Michael Rosenholtz,5,Xmas village always a great time,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1545599414.001,17888.0,16:10:14,2018,0.0,32.0,Xmas village always a great time,positive,5
+107907161683028057526,Maria Cruz,5,"(Translated by Google) It is a very relaxing and beautiful place
+
+(Original)
+Es un lugar bien relajante y bello","{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1595190555.756,18462.0,16:29:15,2020,0.0,111.0,(Translated by Google) It is a very relaxing and beautiful place(Original)Es un lugar bien relajante y bello,positive,5
+102851948247066491019,Tamara,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1606258084.811,18590.0,17:48:04,2020,0.0,,,,5
+111802661667381149031,Julia Feliciano,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1562468346.178,18084.0,22:59:06,2019,0.0,,,,5
+102770818775004209089,abass yanogo,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1530974173.105,17719.0,10:36:13,2018,0.0,,,,5
+113581998722234500778,Giselle Burrell,2,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1569700941.455,18167.0,16:02:21,2019,0.0,,,,2
+107248332738053069418,Jacqueline Vasquez,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1582953439.278,18321.0,00:17:19,2020,0.0,,,,5
+112868765861856280140,Clau B.,4,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1534455682.654,17759.0,17:41:22,2018,0.0,,,,4
+101887082839259251477,John Capra,5,They have the Christmas Village now. Go before the season ends,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1542577024.1,17853.0,16:37:04,2018,0.0,62.0,They have the Christmas Village now. Go before the season ends,positive,5
+106127485405602944549,George Huff,5,The friendly locals!,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1562850812.317,18088.0,09:13:32,2019,0.0,20.0,The friendly locals!,positive,5
+102481757365088954491,Lawrence Sokol,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1559884000.366,18054.0,01:06:40,2019,0.0,,,,5
+106591196465919835463,chris chadwick,4,History everywhere amazing food too.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1558197668.692,18034.0,12:41:08,2019,0.0,36.0,History everywhere amazing food too.,positive,4
+107101603293631932172,Farrukh ibne Mahmood,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1563858673.795,18100.0,01:11:13,2019,0.0,,,,5
+109067296155449511919,Stephanie Watson,3,Went for Holiday Market- very packed. Wish there had been more food and varieties of foods.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1545529655.836,17888.0,20:47:35,2018,0.0,91.0,Went for Holiday Market- very packed. Wish there had been more food and varieties of foods.,negative,3
+111333816065356550896,Sylvia Bradley,3,Nothing unique.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1543615045.967,17865.0,16:57:25,2018,0.0,15.0,Nothing unique.,negative,3
+110008857381665825990,Tessa j,3,Love park/Christmas village- in the past I  would have given a 5 star rating but this year is was just ok. I didnt see as many craft vendors .The food vendors seem to be pleantiful. there were areas to sit and eat  and,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1544499163.625,17876.0,22:32:43,2018,0.0,218.0,Love park/Christmas village- in the past I  would have given a 5 star rating but this year is was just ok. I didnt see as many craft vendors .The food vendors seem to be pleantiful. there were areas to sit and eat  and,neutral,3
+103150216621403961808,Jason,4,Nice place for lunch.  Wednesday to Friday food trucks.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1556823853.771,18018.0,15:04:13,2019,0.0,55.0,Nice place for lunch.  Wednesday to Friday food trucks.,positive,4
+104430881450512911183,Sarah Hunt,4,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1569944809.09,18170.0,11:46:49,2019,0.0,,,,4
+105277271928910334839,Maria Stella Pucello,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1567818412.29,18146.0,21:06:52,2019,0.0,,,,5
+106579933341602536825,Rod Frank,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1573331373.003,18209.0,15:29:33,2019,0.0,,,,5
+109406266586360467193,Melissa Shinn,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1543847348.477,17868.0,09:29:08,2018,0.0,,,,5
+105786391216616629927,David Jefferson,4,"Definite 4-Star experience! ""Wintergarden"" -an open-air outdoor shopping experience - is in full effect. Diagonally across the street - Dilworth Plaza - offers ice skating and food/ drinks #rothmancafe Wheelchair accessible & public restroom available. Live music WOULD have given this a 5th star.","{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1606933454.27,18598.0,13:24:14,2020,0.0,297.0,"Definite 4-Star experience! ""Wintergarden"" -an open-air outdoor shopping experience - is in full effect. Diagonally across the street - Dilworth Plaza - offers ice skating and food/ drinks #rothmancafe Wheelchair accessible & public restroom available. Live music WOULD have given this a 5th star.",positive,4
+115610530949906797197,Lynn Moore,3,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1512932933.847,17510.0,14:08:53,2017,0.0,,,,3
+103257921763639876993,Maylynn Le,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1552810914.754,17972.0,04:21:54,2019,0.0,,,,5
+108896126026184676974,Roc Rocco,5,History,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1572174873.529,18196.0,07:14:33,2019,0.0,7.0,History,neutral,5
+106986886002722677605,Kimberly Carroll,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1547082907.618,17906.0,20:15:07,2019,0.0,,,,5
+104417009248154469004,Sean McGrenaghan,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1545092341.588,17883.0,19:19:01,2018,0.0,,,,5
+101014229640075832098,Eric McCloud,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1550934624.338,17950.0,10:10:24,2019,0.0,,,,5
+105272671431986856707,Casianito Baez,4,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1556140064.56,18010.0,17:07:44,2019,0.0,,,,4
+115053294550645616293,Rohit Dabi,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1577766664.804,18261.0,23:31:04,2019,0.0,,,,5
+113866427203144827487,GLENN BRUCE,1,Under construction,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1581973692.352,18309.0,16:08:12,2020,0.0,18.0,Under construction,neutral,1
+101581635017370888665,Gene Cortese,3,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1514216544.156,17525.0,10:42:24,2017,0.0,,,,3
+113021203780273881578,Chris Harrison,4,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1535804720.045,17775.0,08:25:20,2018,0.0,,,,4
+108885809144585185747,Cecilia Embert,5,Cool place to visit,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1570123708.532,18172.0,13:28:28,2019,0.0,19.0,Cool place to visit,positive,5
+103432610002498310260,michelle MOOD,5,Awsome!,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1575808259.22,18238.0,07:30:59,2019,0.0,7.0,Awsome!,positive,5
+112800017647962736680,Alkhansaa A,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1552261044.039,17965.0,19:37:24,2019,0.0,,,,5
+104986082018616694186,O.P. Moran,4,Great place,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1566689338.146,18132.0,19:28:58,2019,0.0,11.0,Great place,positive,4
+117295883812670854591,Ahmed Abdullah,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1560623110.22,18062.0,14:25:10,2019,0.0,,,,5
+116800585948612828673,Andres Carmona,5,Beautiful place.,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1537044737.606,17789.0,16:52:17,2018,1.0,16.0,Beautiful place.,positive,5
+112821197477464747952,Jay Rodriguez,2,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1523791023.981,17636.0,07:17:03,2018,0.0,,,,2
+105362378114301131270,Heather Tower,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1583779233.425,18330.0,14:40:33,2020,0.0,,,,5
+102432855515165640006,J Rivera,5,,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1535585742.075,17772.0,19:35:42,2018,0.0,,,,5
+105141880748535671431,Carl Morrison,5,You have to Love Love Park!,"{'time': None, 'text': None}",0x89c6c62e06582793:0x39e3b31694e55907,1533476432.925,17748.0,09:40:32,2018,0.0,27.0,You have to Love Love Park!,positive,5
