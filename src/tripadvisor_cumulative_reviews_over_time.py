@@ -16,7 +16,7 @@ border = (
     (df["date_of_experience"].dt.year == 2016)
     & (df["date_of_experience"].dt.month == 2)
 ) | (
-    (df["date_of_experience"].dt.year == 2018)
+    (df["date_of_experience"].dt.year == 2018 )
     & (df["date_of_experience"].dt.month == 5)
 )
 df = df.loc[~border].copy()
