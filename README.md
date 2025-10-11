@@ -1,4 +1,4 @@
-# urbanpulse: love park edition
+# Platform as Urban Policy Mobility Medium - Love Park Case Study (research contribution to ongoing publication)
 
 see it live → [love-in-the-park.vercel.app](https://love-in-the-park.vercel.app)
 
