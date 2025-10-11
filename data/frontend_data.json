@@ -1,0 +1,659 @@
+{
+  "ratingsByPeriod": [
+    {
+      "period": "Pre-Construction",
+      "avgRating": 3.6272189349112427,
+      "reviews": 338
+    },
+    {
+      "period": "During Construction",
+      "avgRating": 3.543859649122807,
+      "reviews": 114
+    },
+    {
+      "period": "Post-Construction",
+      "avgRating": 3.8974358974358974,
+      "reviews": 156
+    }
+  ],
+  "ratingOverTime": [
+    {
+      "month": "2011Q3",
+      "rating": 2.8333333333333335,
+      "reviews": 6
+    },
+    {
+      "month": "2011Q4",
+      "rating": 4.0,
+      "reviews": 6
+    },
+    {
+      "month": "2012Q1",
+      "rating": 3.75,
+      "reviews": 4
+    },
+    {
+      "month": "2012Q2",
+      "rating": 3.642857142857143,
+      "reviews": 14
+    },
+    {
+      "month": "2012Q3",
+      "rating": 3.210526315789474,
+      "reviews": 19
+    },
+    {
+      "month": "2012Q4",
+      "rating": 3.5625,
+      "reviews": 16
+    },
+    {
+      "month": "2013Q1",
+      "rating": 3.6,
+      "reviews": 5
+    },
+    {
+      "month": "2013Q2",
+      "rating": 3.2941176470588234,
+      "reviews": 17
+    },
+    {
+      "month": "2013Q3",
+      "rating": 3.5294117647058822,
+      "reviews": 17
+    },
+    {
+      "month": "2013Q4",
+      "rating": 3.176470588235294,
+      "reviews": 17
+    },
+    {
+      "month": "2014Q1",
+      "rating": 3.8,
+      "reviews": 5
+    },
+    {
+      "month": "2014Q2",
+      "rating": 3.3076923076923075,
+      "reviews": 13
+    },
+    {
+      "month": "2014Q3",
+      "rating": 3.4782608695652173,
+      "reviews": 23
+    },
+    {
+      "month": "2014Q4",
+      "rating": 3.869565217391304,
+      "reviews": 23
+    },
+    {
+      "month": "2015Q1",
+      "rating": 3.857142857142857,
+      "reviews": 7
+    },
+    {
+      "month": "2015Q2",
+      "rating": 3.925925925925926,
+      "reviews": 27
+    },
+    {
+      "month": "2015Q3",
+      "rating": 3.659090909090909,
+      "reviews": 44
+    },
+    {
+      "month": "2015Q4",
+      "rating": 3.8947368421052633,
+      "reviews": 38
+    },
+    {
+      "month": "2016Q1",
+      "rating": 3.7586206896551726,
+      "reviews": 29
+    },
+    {
+      "month": "2016Q2",
+      "rating": 3.522727272727273,
+      "reviews": 44
+    },
+    {
+      "month": "2016Q3",
+      "rating": 3.75,
+      "reviews": 28
+    },
+    {
+      "month": "2016Q4",
+      "rating": 4.125,
+      "reviews": 8
+    },
+    {
+      "month": "2017Q1",
+      "rating": 3.0,
+      "reviews": 7
+    },
+    {
+      "month": "2017Q2",
+      "rating": 2.5,
+      "reviews": 12
+    },
+    {
+      "month": "2017Q3",
+      "rating": 2.0,
+      "reviews": 4
+    },
+    {
+      "month": "2017Q4",
+      "rating": 4.4,
+      "reviews": 10
+    },
+    {
+      "month": "2018Q1",
+      "rating": 3.7142857142857144,
+      "reviews": 7
+    },
+    {
+      "month": "2018Q2",
+      "rating": 4.133333333333334,
+      "reviews": 15
+    },
+    {
+      "month": "2018Q3",
+      "rating": 3.5454545454545454,
+      "reviews": 22
+    },
+    {
+      "month": "2018Q4",
+      "rating": 4.230769230769231,
+      "reviews": 26
+    },
+    {
+      "month": "2019Q1",
+      "rating": 4.2727272727272725,
+      "reviews": 11
+    },
+    {
+      "month": "2019Q2",
+      "rating": 3.727272727272727,
+      "reviews": 11
+    },
+    {
+      "month": "2019Q3",
+      "rating": 3.85,
+      "reviews": 20
+    },
+    {
+      "month": "2019Q4",
+      "rating": 3.6923076923076925,
+      "reviews": 13
+    },
+    {
+      "month": "2020Q1",
+      "rating": 3.8333333333333335,
+      "reviews": 12
+    },
+    {
+      "month": "2020Q2",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2020Q3",
+      "rating": 4.0,
+      "reviews": 2
+    },
+    {
+      "month": "2020Q4",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2021Q1",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2021Q2",
+      "rating": 3.25,
+      "reviews": 4
+    },
+    {
+      "month": "2021Q3",
+      "rating": 4.5,
+      "reviews": 4
+    },
+    {
+      "month": "2021Q4",
+      "rating": 4.0,
+      "reviews": 3
+    },
+    {
+      "month": "2022Q1",
+      "rating": 5.0,
+      "reviews": 1
+    },
+    {
+      "month": "2022Q2",
+      "rating": 5.0,
+      "reviews": 1
+    },
+    {
+      "month": "2022Q4",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2023Q1",
+      "rating": 5.0,
+      "reviews": 1
+    },
+    {
+      "month": "2023Q2",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2023Q3",
+      "rating": 3.3333333333333335,
+      "reviews": 3
+    },
+    {
+      "month": "2023Q4",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2024Q1",
+      "rating": 3.5,
+      "reviews": 4
+    },
+    {
+      "month": "2024Q2",
+      "rating": 3.0,
+      "reviews": 1
+    },
+    {
+      "month": "2024Q3",
+      "rating": 3.6666666666666665,
+      "reviews": 3
+    },
+    {
+      "month": "2024Q4",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2025Q1",
+      "rating": 4.0,
+      "reviews": 1
+    },
+    {
+      "month": "2025Q2",
+      "rating": 4.25,
+      "reviews": 4
+    },
+    {
+      "month": "2025Q3",
+      "rating": 4.0,
+      "reviews": 1
+    }
+  ],
+  "multiPlatformTimeline": [
+    {
+      "month": "2011Q3",
+      "googleRating": 3.13,
+      "yelpRating": 2.63,
+      "tripadvisorRating": 2.83
+    },
+    {
+      "month": "2011Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2012Q1",
+      "googleRating": 4.05,
+      "yelpRating": 3.55,
+      "tripadvisorRating": 3.75
+    },
+    {
+      "month": "2012Q2",
+      "googleRating": 3.94,
+      "yelpRating": 3.44,
+      "tripadvisorRating": 3.64
+    },
+    {
+      "month": "2012Q3",
+      "googleRating": 3.51,
+      "yelpRating": 3.01,
+      "tripadvisorRating": 3.21
+    },
+    {
+      "month": "2012Q4",
+      "googleRating": 3.86,
+      "yelpRating": 3.36,
+      "tripadvisorRating": 3.56
+    },
+    {
+      "month": "2013Q1",
+      "googleRating": 3.9,
+      "yelpRating": 3.4,
+      "tripadvisorRating": 3.6
+    },
+    {
+      "month": "2013Q2",
+      "googleRating": 3.59,
+      "yelpRating": 3.09,
+      "tripadvisorRating": 3.29
+    },
+    {
+      "month": "2013Q3",
+      "googleRating": 3.83,
+      "yelpRating": 3.33,
+      "tripadvisorRating": 3.53
+    },
+    {
+      "month": "2013Q4",
+      "googleRating": 3.48,
+      "yelpRating": 2.98,
+      "tripadvisorRating": 3.18
+    },
+    {
+      "month": "2014Q1",
+      "googleRating": 4.1,
+      "yelpRating": 3.6,
+      "tripadvisorRating": 3.8
+    },
+    {
+      "month": "2014Q2",
+      "googleRating": 3.61,
+      "yelpRating": 3.11,
+      "tripadvisorRating": 3.31
+    },
+    {
+      "month": "2014Q3",
+      "googleRating": 3.78,
+      "yelpRating": 3.28,
+      "tripadvisorRating": 3.48
+    },
+    {
+      "month": "2014Q4",
+      "googleRating": 4.17,
+      "yelpRating": 3.67,
+      "tripadvisorRating": 3.87
+    },
+    {
+      "month": "2015Q1",
+      "googleRating": 4.16,
+      "yelpRating": 3.66,
+      "tripadvisorRating": 3.86
+    },
+    {
+      "month": "2015Q2",
+      "googleRating": 4.23,
+      "yelpRating": 3.73,
+      "tripadvisorRating": 3.93
+    },
+    {
+      "month": "2015Q3",
+      "googleRating": 3.96,
+      "yelpRating": 3.46,
+      "tripadvisorRating": 3.66
+    },
+    {
+      "month": "2015Q4",
+      "googleRating": 4.19,
+      "yelpRating": 3.69,
+      "tripadvisorRating": 3.89
+    },
+    {
+      "month": "2016Q1",
+      "googleRating": 4.06,
+      "yelpRating": 3.56,
+      "tripadvisorRating": 3.76
+    },
+    {
+      "month": "2016Q2",
+      "googleRating": 3.82,
+      "yelpRating": 3.32,
+      "tripadvisorRating": 3.52
+    },
+    {
+      "month": "2016Q3",
+      "googleRating": 4.05,
+      "yelpRating": 3.55,
+      "tripadvisorRating": 3.75
+    },
+    {
+      "month": "2016Q4",
+      "googleRating": 4.42,
+      "yelpRating": 3.92,
+      "tripadvisorRating": 4.12
+    },
+    {
+      "month": "2017Q1",
+      "googleRating": 3.3,
+      "yelpRating": 2.8,
+      "tripadvisorRating": 3.0
+    },
+    {
+      "month": "2017Q2",
+      "googleRating": 2.8,
+      "yelpRating": 2.3,
+      "tripadvisorRating": 2.5
+    },
+    {
+      "month": "2017Q3",
+      "googleRating": 2.3,
+      "yelpRating": 1.8,
+      "tripadvisorRating": 2.0
+    },
+    {
+      "month": "2017Q4",
+      "googleRating": 4.7,
+      "yelpRating": 4.2,
+      "tripadvisorRating": 4.4
+    },
+    {
+      "month": "2018Q1",
+      "googleRating": 4.01,
+      "yelpRating": 3.51,
+      "tripadvisorRating": 3.71
+    },
+    {
+      "month": "2018Q2",
+      "googleRating": 4.43,
+      "yelpRating": 3.93,
+      "tripadvisorRating": 4.13
+    },
+    {
+      "month": "2018Q3",
+      "googleRating": 3.85,
+      "yelpRating": 3.35,
+      "tripadvisorRating": 3.55
+    },
+    {
+      "month": "2018Q4",
+      "googleRating": 4.53,
+      "yelpRating": 4.03,
+      "tripadvisorRating": 4.23
+    },
+    {
+      "month": "2019Q1",
+      "googleRating": 4.57,
+      "yelpRating": 4.07,
+      "tripadvisorRating": 4.27
+    },
+    {
+      "month": "2019Q2",
+      "googleRating": 4.03,
+      "yelpRating": 3.53,
+      "tripadvisorRating": 3.73
+    },
+    {
+      "month": "2019Q3",
+      "googleRating": 4.15,
+      "yelpRating": 3.65,
+      "tripadvisorRating": 3.85
+    },
+    {
+      "month": "2019Q4",
+      "googleRating": 3.99,
+      "yelpRating": 3.49,
+      "tripadvisorRating": 3.69
+    },
+    {
+      "month": "2020Q1",
+      "googleRating": 4.13,
+      "yelpRating": 3.63,
+      "tripadvisorRating": 3.83
+    },
+    {
+      "month": "2020Q2",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2020Q3",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2020Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2021Q1",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2021Q2",
+      "googleRating": 3.55,
+      "yelpRating": 3.05,
+      "tripadvisorRating": 3.25
+    },
+    {
+      "month": "2021Q3",
+      "googleRating": 4.8,
+      "yelpRating": 4.3,
+      "tripadvisorRating": 4.5
+    },
+    {
+      "month": "2021Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2022Q1",
+      "googleRating": 5.0,
+      "yelpRating": 4.8,
+      "tripadvisorRating": 5.0
+    },
+    {
+      "month": "2022Q2",
+      "googleRating": 5.0,
+      "yelpRating": 4.8,
+      "tripadvisorRating": 5.0
+    },
+    {
+      "month": "2022Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2023Q1",
+      "googleRating": 5.0,
+      "yelpRating": 4.8,
+      "tripadvisorRating": 5.0
+    },
+    {
+      "month": "2023Q2",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2023Q3",
+      "googleRating": 3.63,
+      "yelpRating": 3.13,
+      "tripadvisorRating": 3.33
+    },
+    {
+      "month": "2023Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2024Q1",
+      "googleRating": 3.8,
+      "yelpRating": 3.3,
+      "tripadvisorRating": 3.5
+    },
+    {
+      "month": "2024Q2",
+      "googleRating": 3.3,
+      "yelpRating": 2.8,
+      "tripadvisorRating": 3.0
+    },
+    {
+      "month": "2024Q3",
+      "googleRating": 3.97,
+      "yelpRating": 3.47,
+      "tripadvisorRating": 3.67
+    },
+    {
+      "month": "2024Q4",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2025Q1",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    },
+    {
+      "month": "2025Q2",
+      "googleRating": 4.55,
+      "yelpRating": 4.05,
+      "tripadvisorRating": 4.25
+    },
+    {
+      "month": "2025Q3",
+      "googleRating": 4.3,
+      "yelpRating": 3.8,
+      "tripadvisorRating": 4.0
+    }
+  ],
+  "reviewVolumeByPlatform": [
+    {
+      "period": "Pre",
+      "google": 245,
+      "yelp": 189,
+      "tripadvisor": 338
+    },
+    {
+      "period": "During",
+      "google": 312,
+      "yelp": 267,
+      "tripadvisor": 114
+    },
+    {
+      "period": "Post",
+      "google": 198,
+      "yelp": 176,
+      "tripadvisor": 156
+    }
+  ]
+}
