@@ -1,25 +1,69 @@
-# gpt-sentiment-mvp
+# urbanpulse: love park edition
 
-a lightweight tool for analyzing public sentiment on urban design changes — built with gpt-4 and open-source llms (like mistral & llama 3). this project was made to help city planners understand how people really feel about places like jfk plaza (love park) in philadelphia.
+see it live → [love-in-the-park.vercel.app](https://love-in-the-park.vercel.app)
 
-## what it does
+---
 
-- runs public feedback through gpt models to classify sentiment (positive, neutral, negative)
-- benchmarks cost, speed, and performance across models (open-source vs. api-based)
-- visualizes trends over time (bar charts, line graphs, boxplots, etc.)
-- saves city teams hours of manual reading & tagging
+## what is this?
 
-## why it matters
+an ultra-minimal dashboard exploring how love park's renovation changed how people feel about the space. all real data. all vibes.
 
-urban planning teams often collect tons of public input — but reading thousands of comments is slow, expensive, and subjective. this project automates that process while staying flexible enough to be reused on new datasets, different parks, and future civic projects.
+---
 
-## how it works
+## what's inside?
+
+- **parallax hero**  
+  love park in the background, title up front, smooth scroll
+- **animated stats**  
+  real ratings before & after construction, counting up as you scroll
+- **interactive graphs**  
+  see the sentiment shift, review volume, and more
+- **before/after slider**  
+  drag to compare the park pre- and post-renovation
+- **key findings**  
+  apple-style, minimal, just the facts
+- **share button**  
+  tweet, link, or just flex your data
+- **methodology**  
+  how the analysis was done, in 4 chill steps
+- **dark mode**  
+  because, obviously
+
+---
+
+## tech stack
+
+- react + typescript
+- vite
+- tailwind css (custom dark theme)
+- framer motion (for all the smooth stuff)
+- recharts (for the graphs)
+
+---
+
+## credits
+
+built by luke pan  
+under the direct supervision of khalil martain  
+research conducted under dr. daniel silver
+
+---
+
+## try it
+
+[https://love-in-the-park.vercel.app](https://love-in-the-park.vercel.app)
+
+---
+
+## want to run it?
 
 ```bash
-gpt-sentiment-mvp/
-├── data/              # your input files go here (json format)
-├── graphs/            # output graphs are saved here
-├── src/               # main script & helpers
-│   └── mvp_sentiment.py
-├── .env               # store your api key here
-├── README.md
+npm install
+npm run dev
+```
+
+open your browser to [localhost:5173](http://localhost:5173)
+
+---
+
+## enjoy the vibes 🌃
