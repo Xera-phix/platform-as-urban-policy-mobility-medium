@@ -1,5 +1,7 @@
 # Platform as Urban Policy Mobility Medium - Love Park Case Study (research contribution to ongoing publication)
 
+# Platform as Urban Policy Mobility Medium - Love Park Case Study (research contribution to ongoing publication)
+
 see it live → [love-in-the-park.vercel.app](https://love-in-the-park.vercel.app)
 
 ---
@@ -63,6 +65,11 @@ npm run dev
 ```
 
 open your browser to [localhost:5173](http://localhost:5173)
+
+---
+
+## enjoy the vibes 🌃
+
 
 ---
 
