@@ -1,4 +1,4 @@
-# urbanpulse: love park edition
+
 
 see it live → [love-in-the-park.vercel.app](https://love-in-the-park.vercel.app)
 
