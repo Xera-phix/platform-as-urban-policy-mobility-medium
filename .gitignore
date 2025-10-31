@@ -22,7 +22,9 @@ node_modules/
 data/part\ 3/
 data/review-Pennsylvania.json.gz
 data/*/GL_review_PCW.rdata
+data/pennsylvania_user_city_summary.csv
 
 # Keep outputs/figures but ignore data
 part1-python-pipeline/outputs/data/
 part2-r-analysis/outputs/data/
+part3-r-analysis/outputs/data/
