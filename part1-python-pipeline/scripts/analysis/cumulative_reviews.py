@@ -1,9 +1,16 @@
-# -*- coding: utf-8 -*-
+"""
+Generate cumulative review visualizations by construction period.
+
+Creates boxplot and stacked bar charts showing rating distribution across pre-construction,
+during-construction, and post-construction periods. Excludes border months (Feb 2016, May 2018)
+where construction timeline is uncertain.
+"""
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1) Load + clean
+# ═══ Data Preparation ═══
 df = pd.read_excel("data/tripadvisor_jfkplaza.xlsx")
 df["date_of_experience"] = pd.to_datetime(df["date_of_experience"], errors="coerce")
 df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
@@ -11,23 +18,25 @@ df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
 df = df.dropna(subset=["date_of_experience", "rating"]).copy()
 df = df[(df["rating"] >= 1) & (df["rating"] <= 5)].copy()
 
-# 2) Exclude border months & label periods
+# Exclude border months where exact construction dates are uncertain
 border = (
     (df["date_of_experience"].dt.year == 2016)
     & (df["date_of_experience"].dt.month == 2)
 ) | (
-    (df["date_of_experience"].dt.year == 2018 )
+    (df["date_of_experience"].dt.year == 2018)
     & (df["date_of_experience"].dt.month == 5)
 )
 df = df.loc[~border].copy()
 
-pre_end = pd.Timestamp("2016-02-01")  # pre: < this
-during_lo = pd.Timestamp("2016-03-01")  # during: >= this
-during_hi = pd.Timestamp("2018-04-30")  # during: <= this
-post_start = pd.Timestamp("2018-06-01")  # post: >= this
+# Love Park construction timeline
+pre_end = pd.Timestamp("2016-02-01")
+during_lo = pd.Timestamp("2016-03-01")
+during_hi = pd.Timestamp("2018-04-30")
+post_start = pd.Timestamp("2018-06-01")
 
 
 def period_of(dt):
+    """Classify date into construction period"""
     if dt < pre_end:
         return "pre"
     if during_lo <= dt <= during_hi:
@@ -42,7 +51,7 @@ order = ["pre", "during", "post"]
 df = df[df["period"].isin(order)].copy()
 df["period"] = pd.Categorical(df["period"], categories=order, ordered=True)
 
-# 3) Sanity table
+# ═══ Summary Statistics ═══
 summary = (
     df.groupby("period", observed=True)["rating"]
     .agg(
@@ -55,10 +64,12 @@ summary = (
     )
     .reindex(order)
 )
-print("\n=== Ratings by period (post-clean) ===")
+print("\n=== Ratings by Period ===")
 print(summary.round(3))
 
-# 4) Boxplot with 5–95% whiskers + notches + mean dots + jittered points
+# ═══ Boxplot Visualization ═══
+# Notched boxes show confidence interval for median
+# 5-95% whiskers avoid always showing 1 and 5 as outliers
 fig = plt.figure(figsize=(9, 6))
 data = [df.loc[df["period"] == p, "rating"].to_numpy() for p in order]
 labels = [f"{p.title()} (n={len(arr)})" for p, arr in zip(order, data)]
@@ -68,17 +79,16 @@ bp = plt.boxplot(
     data,
     positions=positions,
     labels=labels,
-    notch=True,  # notched medians
-    whis=(5, 95),  # whiskers at 5th–95th percentiles (avoids always 1 & 5)
+    notch=True,
+    whis=(5, 95),
     showmeans=False,
     manage_ticks=False,
 )
 
-# overlay mean dots
 means = [arr.mean() for arr in data]
 plt.plot(positions, means, marker="o", linestyle="None")
 
-# light jitter of individual points (helps diagnose distribution)
+# Jittered points show distribution density
 rng = np.random.default_rng(42)
 for i, arr in enumerate(data, start=1):
     x = rng.normal(loc=i, scale=0.03, size=len(arr))
@@ -91,7 +101,8 @@ plt.grid(True, axis="y", linestyle="--", alpha=0.5)
 plt.tight_layout()
 plt.savefig("boxplot_ratings_pre_during_post_fixed.png", dpi=200)
 plt.show()
-# rating proportion chart (optional)
+
+# ═══ Rating Distribution Chart ═══
 tab = (
     df.pivot_table(
         index="period", columns="rating", values="user_name", aggfunc="count"
