@@ -220,6 +220,56 @@ def main():
     print(f"Saved: {output_path2}")
     plt.close(fig2)
 
+    # ========== Log Scale Versions ==========
+    print("\nGenerating Log-Scale Histograms...")
+
+    # Combined Log Figure
+    fig_log, axes_log = plt.subplots(1, 2, figsize=(14, 5))
+
+    # Log Histogram 1: Number of Reviews
+    ax1_log = axes_log[0]
+    ax1_log.hist(
+        reviews_capped,
+        bins=range(1, 23),
+        edgecolor="black",
+        alpha=0.7,
+        color="steelblue",
+        log=True,
+    )
+    ax1_log.set_xlabel("Number of Reviews per Reviewer", fontsize=11)
+    ax1_log.set_ylabel("Number of Reviewers (Log Scale)", fontsize=11)
+    ax1_log.set_title(
+        "Distribution of Review Counts (Log Scale)", fontsize=12, fontweight="bold"
+    )
+    ax1_log.set_xticks(range(1, 22))
+    ax1_log.set_xticklabels([str(i) if i < 20 else "20+" for i in range(1, 22)])
+
+    # Log Histogram 2: Municipalities
+    ax2_log = axes_log[1]
+    ax2_log.hist(
+        municipalities_capped,
+        bins=range(1, 18),
+        edgecolor="black",
+        alpha=0.7,
+        color="forestgreen",
+        log=True,
+    )
+    ax2_log.set_xlabel("Number of Unique Municipalities per Reviewer", fontsize=11)
+    ax2_log.set_ylabel("Number of Reviewers (Log Scale)", fontsize=11)
+    ax2_log.set_title(
+        "Distribution of Municipality Coverage (Log Scale)",
+        fontsize=12,
+        fontweight="bold",
+    )
+    ax2_log.set_xticks(range(1, 17))
+    ax2_log.set_xticklabels([str(i) if i < 15 else "15+" for i in range(1, 17)])
+
+    plt.tight_layout()
+    output_path_log = FIGURES_DIR / "reviewer_histograms_log.png"
+    plt.savefig(output_path_log, dpi=150, bbox_inches="tight")
+    print(f"Saved: {output_path_log}")
+    plt.close(fig_log)
+
     # Print summary
     print("\n" + "=" * 60)
     print("SUMMARY STATISTICS")

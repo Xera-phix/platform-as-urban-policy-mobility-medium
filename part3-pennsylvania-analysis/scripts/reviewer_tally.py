@@ -41,8 +41,25 @@ def main():
     # Convert has_response sum to integer
     reviewer_stats["num_responses"] = reviewer_stats["num_responses"].astype(int)
 
+    # Calculate response rate percentage
+    reviewer_stats["response_rate_pct"] = (
+        (reviewer_stats["num_responses"] / reviewer_stats["num_reviews"]) * 100
+    ).round(1)
+
     # Sort by number of reviews descending
     reviewer_stats = reviewer_stats.sort_values("num_reviews", ascending=False)
+
+    # Reorder columns for clarity
+    reviewer_stats = reviewer_stats[
+        [
+            "review_user_id",
+            "review_user_name",
+            "num_reviews",
+            "unique_municipalities",
+            "num_responses",
+            "response_rate_pct",
+        ]
+    ]
 
     # Save to CSV
     reviewer_stats.to_csv(OUTPUT_PATH, index=False)

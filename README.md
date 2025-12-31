@@ -10,9 +10,9 @@ see it live → [love-in-the-park.vercel.app](https://love-in-the-park.vercel.ap
 
 this project spans three analytical phases examining how people experience urban spaces through online reviews:
 
-- **part 1**: detailed analysis of love park's 2016-2018 renovation (673 reviews)
-- **part 2**: large-scale pennsylvania review patterns (21.9M reviews)  
-- **part 3**: statistical modeling and comparative analysis
+- **part 1**: python sentiment analysis pipeline (673 love park reviews)
+- **part 2**: interactive frontend dashboard (react + typescript)
+- **part 3**: large-scale pennsylvania brewery analysis (21.9M reviews)
 
 combining gpt-powered sentiment analysis, postgresql infrastructure, big data processing, and interactive visualization to understand urban spaces at scale.
 
@@ -49,16 +49,6 @@ combining gpt-powered sentiment analysis, postgresql infrastructure, big data pr
 
 ```
 gpt-sentiment-mvp/
-├── part1-frontend/              # interactive dashboard (DEPLOYED)
-│   └── review-analytics-dashboard/
-│       ├── src/
-│       │   ├── components/      # react components
-│       │   ├── lib/
-│       │   │   ├── supabase.ts     # database client
-│       │   │   └── reviewService.ts # data queries
-│       │   └── App.tsx
-│       └── public/
-│           └── frontend_data.json  # pre-computed stats
 ├── part1-python-pipeline/       # sentiment analysis pipeline
 │   ├── scripts/
 │   │   ├── analysis/            # statistical analysis (673 reviews)
@@ -68,16 +58,26 @@ gpt-sentiment-mvp/
 │   │       ├── setup_supabase.py   # db setup & upload
 │   │       └── test_supabase.py    # connection testing
 │   └── requirements.txt
-├── part2-pennsylvania-analysis/ # large-scale review analysis (NEW)
+├── part2-frontend/              # interactive dashboard (DEPLOYED)
+│   └── review-analytics-dashboard/
+│       ├── src/
+│       │   ├── components/      # react components
+│       │   ├── lib/
+│       │   │   ├── supabase.ts     # database client
+│       │   │   └── reviewService.ts # data queries
+│       │   └── App.tsx
+│       └── public/
+│           └── frontend_data.json  # pre-computed stats
+├── part3-pennsylvania-analysis/ # large-scale brewery review analysis
 │   ├── scripts/
-│   │   └── analyze_user_locations.py  # 21.9M review analysis
-│   └── README.md                # part 2 documentation
-├── part3-r-analysis/            # statistical modeling (RENAMED)
-│   ├── scripts/
-│   └── read_rdata.py           # R data import tools
+│   │   ├── merge_brewery_reviews.py   # brewery data processing
+│   │   ├── reviewer_tally.py          # reviewer statistics
+│   │   └── reviewer_histograms.py     # visualization
+│   ├── outputs/                 # analysis outputs & figures
+│   └── README.md                # part 3 documentation
 └── data/                        # raw & processed data
     ├── tripadvisor_jfkplaza_with_periods.json  # 673 reviews
-    ├── pennsylvania_user_location_summary.csv  # 4.96M users
+    ├── pennsylvania_user_city_summary.csv      # user data
     └── part 3/
         └── review-Pennsylvania.json/
             └── review-Pennsylvania.json  # 21.9M reviews
@@ -85,7 +85,7 @@ gpt-sentiment-mvp/
 
 ---
 
-## phase 1: love park detailed analysis ✅
+## phase 1: python sentiment pipeline ✅
 
 ### what we built
 - **interactive frontend**: parallax hero, animated stats, dynamic graphs
@@ -161,7 +161,7 @@ python part1-python-pipeline/scripts/database/test_supabase.py
 
 ### 3. run dashboard
 ```bash
-cd part1-frontend/review-analytics-dashboard
+cd part2-frontend/review-analytics-dashboard
 npm install
 npm run dev
 ```
@@ -216,50 +216,34 @@ await getTotalReviewCount()
 
 ---
 
-## phase 2: pennsylvania large-scale analysis ✅
+## phase 2: frontend dashboard ✅
+
+### what we built
+- **interactive frontend**: parallax hero, animated stats, dynamic graphs
+- **database infrastructure**: postgresql with 673 reviews across 3 construction periods
+- **deployment**: production-ready with static data optimization
+
+---
+
+## phase 3: pennsylvania brewery analysis 🔄
 
 ### what we built
 - **big data processing**: 21.9 million reviews from pennsylvania google local
-- **user behavior analysis**: 4.96M unique users across 189K locations
-- **memory optimization**: filter-then-pivot approach to handle massive datasets
-- **pattern identification**: multi-location reviewers vs single-location users
+- **brewery focus**: filtered to breweries and brewpubs
+- **reviewer analysis**: tally statistics and activity histograms
+- **municipality validation**: geographic data verification
 
 ### key findings
 - **21,944,802 reviews** processed from pennsylvania dataset
 - **4,957,916 unique users** identified
 - **189,836 unique locations** (businesses via gmap_id)
-- **58.3% single-location users** (2.89M users reviewed only 1 place)
-- **41.7% multi-location users** (2.07M users reviewed 2+ places)
-- **most active user** reviewed 1,036 different locations
-
-### technical achievements
-- **memory efficiency**: avoided 877 GB matrix allocation with smart filtering
-- **processing speed**: handled 22M records in ~8 minutes
-- **scalability**: techniques applicable to even larger datasets
-- **output**: 213 MB CSV with user-location distribution matrix
+- reviewer activity distribution analysis
+- municipality coverage patterns
 
 ### analysis outputs
-- `data/pennsylvania_user_location_summary.csv` - user review distribution
-- top 5 most-reviewed locations identified
-- user engagement metrics calculated
-
----
-
-## phase 3: statistical modeling 🔄
-
-### current focus
-working with `GL_review_PCW.rdata` for advanced statistical analysis
-
-### tools
-- r programming language
-- python (rpy2, pyreadr)
-- statistical modeling packages
-
-### goals
-- deeper statistical validation
-- predictive modeling
-- comparative analysis with other urban spaces
-- cross-scale pattern analysis (673 reviews vs 21.9M reviews)
+- `part3-pennsylvania-analysis/outputs/` - processed data and figures
+- reviewer tally statistics
+- histogram visualizations
 
 ---
 
@@ -284,7 +268,7 @@ VITE_SUPABASE_KEY=your-anon-key
 
 - **tripadvisor**: 673 reviews (2011-2018) - primary source
 - **database**: supabase postgresql with full review text, metadata, and period classifications
-- **r dataset**: `GL_review_PCW.rdata` for advanced statistical analysis
+- **pennsylvania dataset**: 21.9M reviews for large-scale analysis
 
 ### data pipeline
 1. **collection**: scraped tripadvisor reviews → excel
@@ -309,15 +293,14 @@ VITE_SUPABASE_KEY=your-anon-key
 
 - [x] **phase 1a**: data collection & sentiment analysis (673 tripadvisor reviews)
 - [x] **phase 1b**: database infrastructure (supabase postgresql)
-- [x] **phase 1c**: interactive dashboard (react + typescript)
-- [x] **phase 1d**: deployment & optimization (vercel)
-- [x] **phase 2a**: large-scale data processing (21.9M pennsylvania reviews)
-- [x] **phase 2b**: user behavior analysis (4.96M users, 189K locations)
-- [x] **phase 2c**: memory-optimized big data pipeline
-- [ ] **phase 3a**: statistical modeling (r programming)
-- [ ] **phase 3b**: comparative analysis (love park vs state-wide patterns)
-- [ ] **phase 3c**: predictive modeling & insights
-- [ ] **phase 3d**: cross-platform integration (google, yelp, tripadvisor)
+- [x] **phase 1c**: visualization & analysis scripts
+- [x] **phase 2a**: interactive dashboard (react + typescript)
+- [x] **phase 2b**: deployment & optimization (vercel)
+- [x] **phase 3a**: large-scale data processing (21.9M pennsylvania reviews)
+- [x] **phase 3b**: brewery/brewpub filtering & analysis
+- [x] **phase 3c**: reviewer tally & histogram analysis
+- [ ] **phase 3d**: municipality validation & geographic analysis
+- [ ] **phase 3e**: comparative analysis (love park vs state-wide patterns)
 
 ---
 
